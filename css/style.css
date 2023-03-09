@@ -1,0 +1,140 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+ 
+ 
+   overflow-y: scroll;
+
+}
+@font-face {
+  font-family: font1;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: lato;
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+:root{
+  --color1:#F4511E;
+}
+.navbar{
+  --bs-navbar-padding-y: 0rem!important;
+
+}
+.mybgcolor{
+  background-color: var(--color1)!important;
+}
+.nav-link {
+
+color: white!important;
+}
+.nav-link:hover {
+  background-color: white;
+  color: var(--color1)!important;
+  }
+nav a{
+  font-family: font1;
+  letter-spacing: 3px;
+  font-size: 12px!important;
+  line-height: 20px;
+}
+
+.navbar>.container-fluid{
+  padding: 0rem!important;
+}
+.navbar-toggler {
+padding: 0.1rem 0.5rem!important;
+margin:1rem 1.2rem!important;
+
+}
+
+.nav-link,.navbar-brand {
+    padding:1rem 1.2rem!important;
+
+}
+.navbar-collapse{
+  
+  border-top: 1px solid lightgray!important;
+}
+.navbar-toggler:focus {
+  
+  box-shadow: 0 0 0 0!important;
+  background-color: lightgray;
+ 
+}
+
+
+.navbar-toggler-icon{
+  background-image:none!important;
+  color: gray;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: var(--color1)!important;
+  background-color: white;
+}
+/*start header*/
+header{
+  font-family: font1;
+}
+#header h1{
+  font-size: 63px;
+  font-weight: 400;
+}
+#header p{
+  font-size:21px;
+  font-weight: 200;
+}
+/*start about*/
+#about{
+  font-family: sans-serif;;
+}
+#about h2{
+  font-size: 24px;
+  line-height: 26px;
+  
+  font-weight: 600;
+} 
+#about .fa-solid,#values .fa-solid,#services .fa-solid,#portofolio .fa-solid{
+  color: var(--color1);
+}
+#carouselExampleDark {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 26px;
+
+}
+.carousel-indicators [data-bs-target] {
+  
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white!important;
+  border: 2px solid var(--color1);
+  opacity: 1;
+}
+.carousel-indicators .active {
+  background-color :var(--color1) !important;
+  opacity: 1;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+  background-image: none;
+  color: var(--color1);
+  filter: none!important;
+
+}
+.carousel-control-next, .carousel-control-prev{
+  opacity: 1!important;
+}
+
+.card{
+  border: 1px solid var(--color1);
+}
+.card:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset!important;
+}
