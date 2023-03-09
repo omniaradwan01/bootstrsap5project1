@@ -6,9 +6,10 @@
     <title>Bootstrap demo</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
     <!--start nav-->
     <nav class="navbar navbar-dark navbar-expand-lg bg-body-tertiary mybgcolor px-md-5 fixed-top" >
       <div class="container-fluid">
@@ -46,7 +47,7 @@
 
     <!--start company-->
     <div class="container-fluid mybgcolor text-light text-center p-5" id="header">
-      <h1 class="pt-3 company">Company</h1>
+      <h1 class="pt-3 company wow bounceInUp">Company</h1>
       <p> We specialize in blablabla</p>
       <div class="row">
           <div class="col-md-3"> </div>
@@ -73,7 +74,7 @@
           </p>
           <button class="btn btn-light border py-2 px-3"> Get In Touch </button>
       </div>
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 text-center wow bounceInUp" data-wow-duration="2s">
         <i class="fa-solid fa-chart-simple fa-10x "></i>
       </div>
 
@@ -82,7 +83,7 @@
     <!--end about-->
      <!--start values-->
      <div class="row p-md-5  p-3 bg-light" id="values">
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 text-center  wow bounceInUp" data-wow-duration="2s">
         <i class="fa-solid fa-earth-africa fa-10x "></i>
       </div>
       <div class="col-md-8">
@@ -105,7 +106,7 @@
    
         <h3>SERVICES</h3>
         <p>What we offer</p>
-        <div class="row p-md-5 p-3">
+        <div class="row p-md-5 p-3  wow bounceInUp" data-wow-duration="2s">
             <div class="col-md-4 p-md-3 p-2">
               <i class="fa-solid fa-power-off fa-3x"></i>
               <h4 class="pt-2 pb-4 fw-normal">Power</h4>
@@ -146,7 +147,7 @@
    
     <h3>PORTFOLIO</h3>
     <p>What we have created</p>
-    <div class="row">
+    <div class="row  wow bounceInUp" data-wow-duration="2s" >
       <div class="col-md-4">
         <div class="card border border-0" >
           <img src="images/paris.jpg" class="card-img-top" alt="...">
@@ -243,7 +244,7 @@
   <div class=" p-md-5  p-3 text-center" id="pricing">
         <h3>PRICING</h3>
         <p>Choose a payment plan that works for you</p>
-    <div class="row row-cols-1 row-cols-md-3 mb-3 ">
+    <div class="row row-cols-1 row-cols-md-3 mb-3  wow bounceInUp" data-wow-duration="2s">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3 mybgcolor">
@@ -316,7 +317,7 @@
           <p> <i class="fa-regular fa-envelope"></i> myemail@something.com</p> 
         </div>
         <div class="col-md-7">
-            <form action="">
+            <form action="" class=" wow bounceInUp" data-wow-duration="2s">
               <div class="mb-3">
                 <div class="row">
                   <div class="col">
@@ -345,6 +346,9 @@
     <!--end contact-->
 
     <script src="js/bootstrap.bundle.min.js"></script>
-   
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
   </body>
 </html>

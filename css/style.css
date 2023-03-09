@@ -6,8 +6,9 @@
 }
 body{
  
- 
-   overflow-y: scroll;
+  position: relative;
+  overflow: auto;
+
 
 }
 @font-face {
